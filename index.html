@@ -1,168 +1,128 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-<title>我是陳祺忠</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f5f5;
-}
+    <title>Bootstrap 4, from LayoutIt!</title>
 
-/* 頁眉 */
-header {
-  background-color: #f5f5f5;
-  text-align: left;
-  font-size: 20px;
-  color: #777777;
-}
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
 
-/* 中間段 */
-section {
-  display: flex;
-}
-/*選單*/
-nav {
-  flex:1;
-  float: left;
-  width: 25%;
-  background: #f2f1ed;
-  padding: 20px;
-}
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-/* 選單內容 */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  position: fixed;
-  top:200px;
-}
-nav img{
-    position: fixed;
-    width:250px;
-   }
-/*副內文*/
-article {
-  float: right;
-  padding: 0px 20px;
-  width: 80%;
-}
-span.phototext{
-  position: absolute;
-  display: block;
-}
-article img{
-    position: relative;
-    left: 10%;
-    margin: 0px 10px 30px 10px;
-    /*width: 300px;*/
-    height: 200px;
-}
-article img:hover {
-    /*border:1px solid #848484;*/
-    opacity:0.3;
-}
+  </head>
+  <body>
 
-/* 內文 */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* 頁腳 */
-footer {
-  background-color: #f2f1ed;
-  padding: 10px;
-  text-align: left;
-  color: #777777;
-}
-
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-li {
-    padding: 10px;
-}
-li a{
-    color:black;
-    text-decoration:none;
-}
-li a:hover{
-    color:black;
-    text-decoration:underline;
-}
-p.footer{
-    margin:0px ;
-}
-/**/
-
-
-</style>
-</head>
-<body>
-
-<header>
-    <!--預留空間-->
-    <br>
-</header>
-
-<section>
-    <nav>
-        <a href="HOME.html"><img src="./photo/logo.png" alt="圖片載入中"></a>
-        <ul>
-            <li>
-                <a href="About.html">關於 About</a>
-            </li>
-            <li>
-                <a href="About.html">作品 Work</a></li>
-            </li>
-            <li>
-                <a href="About.html">設計服務 Service</a></li>
-            </li>
-            <li>
-                <a href="About.html">聯絡 Contact</a></li>
-            </li>
+    <div id="nav">
+      <div class="container">
+        <button type="button" class="menu-button">
+          三
+        </button> 
+        // 用checkbox控制選單是顯示
+        <input type="checkbox" class="menu-button-checkbox"> 
+        <ul class="menu">
+          <li><a href="#about">Who am I</a></li>
+          <li><a href="#my-work">My Work</a></li>
+          <li><a href="#contact-me">Contact me</a></li>
         </ul>
-    </nav>
-  
-  <article>
-      <div>
-      <img  src="./photo/chentenfun/chentenfun-logo3.jpg" alt="圖片載入中" >
-      <!--<p>圖片說明</p>-->
       </div>
-      <img  src="./photo/huayi/huayi-name2-jin.jpg" alt="圖片載入中" >
-      <img  src="./photo/lijinamecad/lijinamecad-namecard.jpg" alt="圖片載入中" >
-      <img  src="./photo/meijang/meijang-ludm.png" alt="圖片載入中" >
-      <img  src="./photo/meijang/meijang-jinoil-dm.png" alt="圖片載入中" >
-      <img  src="./photo/meijang/meijang-jinoil-namecard.jpg" alt="圖片載入中" >
-      <img  src="./photo/meijang/S__5513705.jpg" alt="圖片載入中" >
-      <img  src="./photo/oter/ok59x34-01.jpg" alt="圖片載入中" >
-      <img  src="./photo/sowdonten/sowdonten-logo.jpg" alt="圖片載入中" >
-      <img  src="./photo/spring/spring-logo2.jpg" alt="圖片載入中" >
-      <img  src="./photo/sumdow/sumdow-logo2.jpg" alt="圖片載入中" >
-  </article>
-</section>
+    </div>
+        <ul class="menu">
+          <li><a href="#about">Who am I</a></li>
+          <li><a href="#my-work">My Work</a></li>
+          <li><a href="#contact-me">Contact me</a></li>
+        </ul>
+      </div>
+    </div>
 
-<footer>
-  <div style="margin:10px;">
-    <p class="footer">我是陳祺忠</p>
-    <p class="footer">tel：07-xxxxxxx | Phone：09-32320074</p>
-    <p class="footer">地址：</p>
-  </div>
-</footer>
-
-</body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav {
+  text-align: left;
+  padding: 20px;
+  flex: row;
+  background-color: aqua;
+}
+
+nav img {
+  position: relative;
+  width: 100%;
+  margin: 0px 0px 100px 0px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+  position: relative;
+}
+
+li {
+  padding: 10px 0px;
+}
+
+li a {
+  color: #000000;
+}
+
+li a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+article {
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+article img {
+  margin: 0px 10px 30px 10px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+article img:hover {
+  opacity: 0.3;
+}
+
+article div.container {
+  position: relative;
+}
