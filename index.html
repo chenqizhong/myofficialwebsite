@@ -1,128 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="zh-TW">
 
-    <title>Bootstrap 4, from LayoutIt!</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #ffffff;
+    }
 
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
+    nav {
+      text-align: left;
+      padding: 20px;
+      flex: row;
+      height: 100%;
+      background-color: rgb(243, 241, 241);
+    }
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    nav img {
+      position: relative;
+      width: 150px;
+      object-fit: cover;
+      padding: 0px 0px 0px 20px;
+    }
 
-  </head>
-  <body>
+    nav a {
+      color: black;
+      text-decoration: none;
+    }
 
-    <div id="nav">
-      <div class="container">
-        <button type="button" class="menu-button">
-          三
-        </button> 
-        // 用checkbox控制選單是顯示
-        <input type="checkbox" class="menu-button-checkbox"> 
-        <ul class="menu">
-          <li><a href="#about">Who am I</a></li>
-          <li><a href="#my-work">My Work</a></li>
-          <li><a href="#contact-me">Contact me</a></li>
-        </ul>
+    nav ul {
+      list-style-type: none;
+      padding: 40px 0px 0px 20px;
+
+
+    }
+
+    li {
+      padding: 10px 0px;
+    }
+
+    li a {
+      color: #000000;
+    }
+
+    li a:hover {
+      color: rgb(255, 255, 255);
+      text-decoration: underline;
+    }
+
+    article {
+
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    article div.photo {
+      text-align: center;
+    }
+
+    article img {
+      margin: 30px 50px;
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      transition: 0.5s;
+    }
+
+    article img:hover {
+      opacity: 0.3;
+    }
+
+    article div.container {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-ms-12 col-xl-12 px-0">
+        <nav class="navbar navbar-expand-lg bg-light">
+
+          <div class="container-fluid">
+            <a class="navbar-brand" href="HOME.html"><img src="./photo/logo.png" alt="圖片載入中"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">關於 About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">作品 Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">設計服務 Service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">聯絡 Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="col-xl-12 p-0">
+        <article class="px-0">
+          <div class="photo">
+            <img src="./photo/chentenfun/chentenfun-logo3.jpg" alt="圖片載入中">
+            <img src="./photo/huayi/huayi-name2-jin.jpg" alt="圖片載入中">
+            <img src="./photo/lijinamecad/lijinamecad-namecard.jpg" alt="圖片載入中">
+            <img src="./photo/meijang/meijang-ludm.png" alt="圖片載入中">
+            <img src="./photo/meijang/meijang-jinoil-dm.png" alt="圖片載入中">
+            <img src="./photo/meijang/meijang-jinoil-namecard.jpg" alt="圖片載入中">
+            <img src="./photo/meijang/S__5513705.jpg" alt="圖片載入中">
+            <img src="./photo/oter/ok59x34-01.jpg" alt="圖片載入中">
+            <img src="./photo/sowdonten/sowdonten-logo.jpg" alt="圖片載入中">
+            <img src="./photo/spring/spring-logo2.jpg" alt="圖片載入中">
+            <img src="./photo/sumdow/sumdow-logo2.jpg" alt="圖片載入中">
+          </div>
+        </article>
       </div>
     </div>
-        <ul class="menu">
-          <li><a href="#about">Who am I</a></li>
-          <li><a href="#my-work">My Work</a></li>
-          <li><a href="#contact-me">Contact me</a></li>
-        </ul>
-      </div>
-    </div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-nav {
-  text-align: left;
-  padding: 20px;
-  flex: row;
-  background-color: aqua;
-}
-
-nav img {
-  position: relative;
-  width: 100%;
-  margin: 0px 0px 100px 0px;
-}
-
-nav a {
-  color: black;
-  text-decoration: none;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0px;
-  position: relative;
-}
-
-li {
-  padding: 10px 0px;
-}
-
-li a {
-  color: #000000;
-}
-
-li a:hover {
-  color: rgb(255, 255, 255);
-  text-decoration: underline;
-}
-
-article {
-  padding: 10px;
-  background-color: #ffffff;
-}
-
-article img {
-  margin: 0px 10px 30px 10px;
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  transition: 0.5s;
-}
-
-article img:hover {
-  opacity: 0.3;
-}
-
-article div.container {
-  position: relative;
-}
