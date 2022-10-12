@@ -29,29 +29,3 @@ color: #000000;
 li a:hover {
 text-decoration: underline;
 }
-
-article {
-
-  padding: 10px;
-  background-color: #ffffff;
-}
-
-article div.photo {
-  text-align: center;
-}
-
-article img {
-  margin: 30px 50px;
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  transition: 0.5s;
-}
-
-article img:hover {
-  opacity: 0.3;
-}
-
-article div.container {
-  position: relative;
-}
