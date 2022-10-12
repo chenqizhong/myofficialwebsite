@@ -49,7 +49,13 @@ article div {
         width: 80%;
         object-position: 50% 100%;
     }
-
+    article img.titleimg2 {
+      display: inline-block;
+      margin: auto;
+      max-width: 300px;
+      width: 80%;
+      object-position: 50% 100%;
+  }
     article p, h1,h2 {
         padding: 5px;
         margin: auto;
